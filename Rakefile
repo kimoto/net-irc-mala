@@ -6,11 +6,16 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "net-irc-mala"
     gem.summary = %Q{mala following API IRC Gateway}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{mala following API IRC Gateway}
     gem.email = "sub+peerler@gmail.com"
     gem.homepage = "http://github.com/kimoto/net-irc-mala"
     gem.authors = ["kimoto"]
     gem.add_development_dependency "thoughtbot-shoulda"
+
+    gem.add_dependency 'net-irc'
+    gem.add_dependency 'em-eventsource'
+    gem.add_dependency 'json'
+
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
